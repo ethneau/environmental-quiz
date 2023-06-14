@@ -9,7 +9,7 @@ import javax.swing.JLabel;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class quiz {
+public class quizSelect{
 
 	private JFrame frame;
 
@@ -20,7 +20,7 @@ public class quiz {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					quiz window = new quiz();
+					quizSelect window = new quizSelect();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -32,7 +32,7 @@ public class quiz {
 	/**
 	 * Create the application.
 	 */
-	public quiz() {
+	public quizSelect() {
 		initialize();
 	}
 

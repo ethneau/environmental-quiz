@@ -2,10 +2,6 @@
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
-import javax.swing.JPanel;
-import java.awt.BorderLayout;
-import java.awt.GridLayout;
-import javax.swing.JMenuBar;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -14,7 +10,7 @@ import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class maple {
+public class prizes{
 
 	private JFrame frame;
 
@@ -25,7 +21,7 @@ public class maple {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					maple window = new maple();
+					prizes window = new prizes();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -37,7 +33,7 @@ public class maple {
 	/**
 	 * Create the application.
 	 */
-	public maple() {
+	public prizes() {
 		initialize();
 	}
 

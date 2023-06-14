@@ -48,7 +48,7 @@ public class menu {
 		btnNewButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				quiz.main(null);
+				quizSelect.main(null);
 				frame.dispose();
 			}
 		});
@@ -61,7 +61,7 @@ public class menu {
 		btnNewButton1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				maple.main(null);
+				prizes.main(null);
 				frame.dispose();
 			}
 		});
