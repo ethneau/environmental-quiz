@@ -1,4 +1,5 @@
 
+import java.awt.Color;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -40,39 +41,40 @@ public class menu {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 1350, 760);
+		frame.setSize(1350, 760);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JButton btnNewButton = new JButton("Quizzes");
-		btnNewButton.addMouseListener(new MouseAdapter() {
+		JButton quizzes = new JButton("Quizzes");
+		quizzes.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				quizSelect.main(null);
 				frame.dispose();
 			}
 		});
-		btnNewButton.setFont(new Font("Maiandra GD", Font.PLAIN, 80));
-		btnNewButton.setBounds(719, 353, 436, 123);
-		frame.getContentPane().add(btnNewButton);
+		quizzes.setFont(new Font("Kumbh Sans Light", Font.PLAIN, 80));
+		quizzes.setBounds(728, 353, 436, 123);
+		quizzes.setBackground(new Color(176, 211, 173));
+		frame.getContentPane().add(quizzes);
 	
 		
-		JButton btnNewButton1 = new JButton("Prizes");
-		btnNewButton1.addMouseListener(new MouseAdapter() {
+		JButton prizes = new JButton("Prizes");
+		prizes.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				prizes.main(null);
+				prizesMenu.main(null);
 				frame.dispose();
 			}
 		});
-		btnNewButton1.setFont(new Font("Maiandra GD", Font.PLAIN, 80));
-		btnNewButton1.setBounds(125, 353, 436, 123);
-		frame.getContentPane().add(btnNewButton1);
+		prizes.setFont(new Font("Kumbh Sans Light", Font.PLAIN, 80));
+		prizes.setBounds(155, 353, 436, 123);
+		frame.getContentPane().add(prizes);
 		
-		JLabel lblNewLabel = new JLabel("Environment Quizzes");
-		lblNewLabel.setFont(new Font("Maiandra GD", Font.BOLD, 99));
-		lblNewLabel.setBounds(112, 75, 1043, 166);
-		frame.getContentPane().add(lblNewLabel);
+		JLabel title = new JLabel("Environment Quizzes");
+		title.setFont(new Font("Kumbh Sans Light", Font.PLAIN, 99));
+		title.setBounds(160, 75, 1043, 166);
+		frame.getContentPane().add(title);
 		
 
 	}

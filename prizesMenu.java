@@ -10,7 +10,7 @@ import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class prizes{
+public class prizesMenu{
 
 	private JFrame frame;
 
@@ -21,7 +21,7 @@ public class prizes{
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					prizes window = new prizes();
+					prizesMenu window = new prizesMenu();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -33,7 +33,7 @@ public class prizes{
 	/**
 	 * Create the application.
 	 */
-	public prizes() {
+	public prizesMenu() {
 		initialize();
 	}
 
