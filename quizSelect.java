@@ -41,32 +41,36 @@ public class quizSelect{
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 1350, 760);
+		frame.setSize(1350, 760);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 	
 		
-		JComboBox Categories = new JComboBox();
-		Categories.setEditable(true);
-		Categories.setFont(new Font("Maiandra GD", Font.PLAIN, 55));
-		Categories.setBounds(254, 295, 834, 167);
-		frame.getContentPane().add(Categories);
+		JComboBox<String> categories = new JComboBox<String>();
+		categories.setEditable(false);
+		categories.setFont(new Font("Kumbh Sans Light", Font.PLAIN, 55));
+		categories.setBounds(650, 295, 400, 130);
+		frame.getContentPane().add(categories);
 		
-		Categories.setSelectedItem("Select a Category");
-		Categories.addItem("Garbage");
-		Categories.addItem("Environment");
+		JLabel categorylbl = new JLabel("Category");
+		categorylbl.setFont(new Font("Kumbh Sans Light", Font.PLAIN, 55));
+		categorylbl.setBounds(200,250,500,200);
+		frame.getContentPane().add(categorylbl);
+
+		categories.setSelectedItem("Select a Category");
+		categories.addItem("Garbage");
+		categories.addItem("Environment");
 	
 		
-		JComboBox Diffculty = new JComboBox();
-		Diffculty.setEditable(true);
-		Diffculty.setFont(new Font("Maiandra GD", Font.PLAIN, 55));
-		Diffculty.setBounds(254, 488, 834, 172);
-		frame.getContentPane().add(Diffculty);
+		JComboBox<String> difficulty = new JComboBox<String>();
+		difficulty.setEditable(true);
+		difficulty.setFont(new Font("Maiandra GD", Font.PLAIN, 55));
+		difficulty.setBounds(650, 488, 400, 130);
+		frame.getContentPane().add(difficulty);
 		
-		Diffculty.setSelectedItem("Select a Diffculty");
-		Diffculty.addItem("Easy");
-		Diffculty.addItem("Medium");
-		Diffculty.addItem("Hard");
+		difficulty.addItem("Easy");
+		difficulty.addItem("Medium");
+		difficulty.addItem("Hard");
 		
 		
 		
@@ -85,10 +89,10 @@ public class quizSelect{
 		btnNewButton.setBounds(469, 683, 89, 40);
 		frame.getContentPane().add(btnNewButton1);
 		
-		JLabel lblNewLabel = new JLabel("Select your Quiz");
-		lblNewLabel.setFont(new Font("Maiandra GD", Font.BOLD, 99));
-		lblNewLabel.setBounds(274, 58, 779, 207);
-		frame.getContentPane().add(lblNewLabel);
+		JLabel title = new JLabel("Settings");
+		title.setFont(new Font("Maiandra GD", Font.BOLD, 99));
+		title.setBounds(274, 58, 779, 207);
+		frame.getContentPane().add(title);
 		
 	}
 }

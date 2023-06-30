@@ -69,6 +69,7 @@ public class menu {
 		});
 		prizes.setFont(new Font("Kumbh Sans Light", Font.PLAIN, 80));
 		prizes.setBounds(155, 353, 436, 123);
+		prizes.setBackground(new Color(176, 211, 173));
 		frame.getContentPane().add(prizes);
 		
 		JLabel title = new JLabel("Environment Quizzes");
