@@ -82,16 +82,16 @@ public class quizSelect{
 				frame.dispose();
 			}
 		});
-		btnNewButton.setBounds(603, 671, 89, 40);
+		btnNewButton.setBounds(603, 650, 89, 40);
 		frame.getContentPane().add(btnNewButton);
 		
 		JButton btnNewButton1 = new JButton("Menu");
-		btnNewButton.setBounds(469, 683, 89, 40);
+		btnNewButton.setBounds(469, 660, 89, 40);
 		frame.getContentPane().add(btnNewButton1);
 		
 		JLabel title = new JLabel("Settings");
 		title.setFont(new Font("Maiandra GD", Font.BOLD, 99));
-		title.setBounds(274, 58, 779, 207);
+		title.setBounds(500, 58, 779, 207);
 		frame.getContentPane().add(title);
 		
 	}
